@@ -143,6 +143,9 @@ set(CMAKE_SKIP_INSTALL_ALL_DEPENDENCY ${CMAKE_SKIP_INSTALL_ALL_DEPENDENCY} CACHE
 set(CMAKE_INSTALL_PREFIX ${CMAKE_INSTALL_PREFIX} CACHE PATH
     "Install Directory prefix for the INSTALL target" FORCE)
 
+set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} CACHE STRING 
+    "CXX flags" FORCE)
+
 # ---------------------------------------------------------------------------
 # Default build is Debug, change on the command line with
 # $cmake -DCMAKE_BUILD_TYPE=Release /path/to/CMakeLists.txt
